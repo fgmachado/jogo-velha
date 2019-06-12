@@ -1,0 +1,24 @@
+{
+  "name": "jogo-velha",
+  "authors": [
+    "Felipe Gomes Machado <fgmachado0@gmail.com>"
+  ],
+  "description": "Jogo da Velha",
+  "main": "index.html",
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.4.1",
+    "bootstrap": "^4.3.1",
+    "font-awesome": "^5.9.0"
+  }
+}
