@@ -1,5 +1,7 @@
-# jogo-velha
-Jogo da velha desenvolvido em Introdução a Engenharia de Software
+# Jogo da velha
+Jogo da velha desenvolvido em Introdução a Engenharia de Software.
+O jogo foi desenvolvido em Javascript, utilizando jQuery, para mais informações sobre jQuery, acesse https://jquery.com/.
+Os estilos utilizados são baseados na biblioteca front-end Bootstrap, para mais informações acesse https://getbootstrap.com/.
 
 ## Pré-requisitos
 
