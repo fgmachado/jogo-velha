@@ -1,0 +1,15 @@
+.celula {
+    margin-bottom: 30px;
+}
+
+.celula button {
+    width: 100%;
+    height: 80px;
+    display: block;
+    background-color: none;
+}
+
+.celula i {
+    font-size: 28px;
+}
+

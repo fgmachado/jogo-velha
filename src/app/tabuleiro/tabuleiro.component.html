@@ -1,0 +1,15 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-4 celula" *ngFor="let celula of tabuleiro.celulas">
+      <button type="button" (click)="registrarJogada(celula)">
+        <fa name="times" *ngIf="celula.jogador != null && celula.jogador.id === 1"></fa>
+        <fa name="circle" *ngIf="celula.jogador != null && celula.jogador.id === 2"></fa>
+      </button>
+    </div>
+  </div>
+  <div class="row" *ngIf="!this.partidaAberta">
+    <div class="col-md-12">
+      <button type="button" class="btn btn-primary" (click)="iniciarJogo()">Nova partida</button>
+    </div>
+  </div>
+</div>

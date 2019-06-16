@@ -1,0 +1,16 @@
+.topo {
+    height: 30px;
+    background-color: #124f89;
+}
+
+.logo {
+    padding: 30px;
+}
+
+.logo img {
+    max-height: 80px;
+}
+
+.nome-jogo {
+    padding: 30px;
+}
