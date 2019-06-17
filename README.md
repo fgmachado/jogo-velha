@@ -1,7 +1,12 @@
 # Jogo da velha
 Jogo da velha desenvolvido em Introdução a Engenharia de Software.
-O jogo foi desenvolvido utilizando Angular 8.
+SPA (Single Page Application) desenvolvida utilizando Angular 8, para saber mais sobre Angular, acesse https://angular.io/.
 Os estilos utilizados são baseados na biblioteca front-end Bootstrap, para mais informações acesse https://getbootstrap.com/.
+
+## Arquitetura da aplicação
+A aplicação segue uma arquitetura modular, conforme exemplificado na imagem abaixo.
+![](https://angular.io/generated/images/guide/architecture/overview2.png?raw=true)
+Para saber mais acesse https://angular.io/guide/architecture.
 
 ## Demo
 Acesse https://fgmachado.github.io/jogo-velha/ para ver a aplicação.
