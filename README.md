@@ -5,7 +5,9 @@ Os estilos utilizados são baseados na biblioteca front-end Bootstrap, para mais
 
 ## Arquitetura da aplicação
 A aplicação segue uma arquitetura modular, conforme exemplificado na imagem abaixo.
+
 ![](https://angular.io/generated/images/guide/architecture/overview2.png?raw=true)
+
 Para saber mais acesse https://angular.io/guide/architecture.
 
 ## Demo
