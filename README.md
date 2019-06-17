@@ -10,6 +10,11 @@ A aplicação segue uma arquitetura modular, conforme exemplificado na imagem ab
 
 Para saber mais acesse https://angular.io/guide/architecture.
 
+### Diagrama de classes da aplicação
+O jogo foi modelado conforme diagrama de classes abaixo
+
+![](documentation/class-diagram.png?raw=true)
+
 ## Pré-requisitos
 ### Nodejs
 Instale o Nodejs, você pode fazer download em https://nodejs.org/en/.
