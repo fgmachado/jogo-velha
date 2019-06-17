@@ -10,11 +10,7 @@ A aplicação segue uma arquitetura modular, conforme exemplificado na imagem ab
 
 Para saber mais acesse https://angular.io/guide/architecture.
 
-## Demo
-Acesse https://fgmachado.github.io/jogo-velha/ para ver a aplicação.
-
 ## Pré-requisitos
-
 ### Nodejs
 Instale o Nodejs, você pode fazer download em https://nodejs.org/en/.
 
