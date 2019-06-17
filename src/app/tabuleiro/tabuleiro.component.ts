@@ -5,6 +5,7 @@ import { Jogador } from '../domain/Jogador';
 import { Resultado } from '../domain/resultados';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { ModalComponent } from '../shared/modal/modal.component';
+import { TabuleiroService } from '../services/tabuleiro.service';
 
 @Component({
   selector: 'app-tabuleiro',
@@ -23,7 +24,7 @@ export class TabuleiroComponent implements OnInit {
 
   private jogadorAtual: Jogador;
 
-  constructor(private modalService: NgbModal) {
+  constructor(private tabuleiroService: TabuleiroService, private modalService: NgbModal) {
     this.iniciarJogo();
   }
 
@@ -61,7 +62,7 @@ export class TabuleiroComponent implements OnInit {
   }
 
   existemJogadasDisponiveis(): boolean {
-    return this.tabuleiro.celulas.filter(celula => celula.jogador == null).length > 0;
+    return this.tabuleiroService.existemJogadasDisponiveis(this.tabuleiro);
   }
 
   verificarVencedor(jogador: Jogador): void {

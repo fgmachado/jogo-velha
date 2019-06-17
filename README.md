@@ -15,5 +15,8 @@ Instale o Nodejs, você pode fazer download em https://nodejs.org/en/.
 Instala o Angular/CLI, executando o comando `npm install -g @angular/cli`.
 
 ## Execução local
-Primeiramente, instale as dependências do node utilizando o comando `npm install`.
-Para executar o jogo, execute o comando `ng serve` via linha de comando, dentro do diretório raiz do projeto.
+Para executar o jogo, você precisará instalar as dependências do projeto, utilize o comando `npm install`.
+Logo após, execute o comando `ng serve` via linha de comando, dentro do diretório raiz do projeto.
+
+## Testes unitários
+Para executar os testes unitários, utilize o comando `ng test`.
