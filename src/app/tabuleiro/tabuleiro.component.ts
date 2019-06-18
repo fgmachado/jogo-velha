@@ -11,13 +11,14 @@ import { TabuleiroService } from '../services/tabuleiro.service';
   templateUrl: './tabuleiro.component.html',
   styleUrls: ['./tabuleiro.component.css']
 })
-
 export class TabuleiroComponent implements OnInit {
 
   public tabuleiro: Tabuleiro;
 
   @Input()
   public fimPartida: string;
+
+  public partidaEncerrada: boolean;
 
   constructor(private tabuleiroService: TabuleiroService, private modalService: NgbModal) {
     this.tabuleiro = new Tabuleiro();
@@ -26,6 +27,7 @@ export class TabuleiroComponent implements OnInit {
 
   ngOnInit() {
     this.tabuleiroService.fimPartida.subscribe((mensagem: string) => {
+      this.partidaEncerrada = true;
       let modal = this.modalService.open(ModalComponent, { size: "lg" })
       modal.componentInstance.titulo = "Partida encerrada!";
       modal.componentInstance.mensagem = mensagem;
@@ -33,6 +35,7 @@ export class TabuleiroComponent implements OnInit {
   }
 
   iniciarJogo(): void {
+    this.partidaEncerrada = false;
     this.tabuleiro = new Tabuleiro();
     this.tabuleiroService.iniciarJogo(new Array<Jogador>(new Jogador(1, 'Jogador 1'), new Jogador(2, 'Jogador 2')));
   }
